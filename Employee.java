@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.IOException;
+
 
 public class Employee {
     int eNo;
@@ -13,7 +14,7 @@ public class Employee {
         eName = name;
     }
 
-    static Employee read() throws IOException{
+    static Employee read() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int no = Integer.parseInt(br.readLine());
         String name = br.readLine();
@@ -25,7 +26,7 @@ public class Employee {
         return ("\nEmployee Details:-\nEmployee No.:\t"+ eNo +"\nName:\t"+ eName +"\nSalary:\t"+ eSalary);
     }
 
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter the total number of employees: ");
         int n = Integer.parseInt(br.readLine());
@@ -48,6 +49,5 @@ public class Employee {
 
         if(!flag)
             System.out.println("There is no employee with employee number " + no);
-
     }
 }
