@@ -7,15 +7,14 @@ public class ArraySearch {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] array = new int[1]; 
-        int size = 1;
 
         System.out.println("Enter integers (Enter a non-integer to escape...)");
         do {
             try {
                 array[array.length - 1] = Integer.parseInt(br.readLine());
-                array = Arrays.copyOf(array, ++size);
+                array = Arrays.copyOf(array, array.length + 1);
             } catch (NumberFormatException e) {
-                array = Arrays.copyOf(array, --size);
+                array = Arrays.copyOf(array, array.length - 1);
                 break;
             }
         } while(true);
