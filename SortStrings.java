@@ -7,7 +7,7 @@ public class SortStrings {
         System.out.println("Enter the number of strings");
         int no = sc.nextInt();
         String[] array = new String[no];
-        array[0] = sc.nextLine();           //necessary to remove considering the first 'enter' after the no. of input as a string
+        array[0] = sc.nextLine();           //necessary to remove considering the first 'enter' as a string after getting the no. of strings
 
         System.out.println("Enter " + no + " strings:");
         for(int i = 0; i < no; i++) 
