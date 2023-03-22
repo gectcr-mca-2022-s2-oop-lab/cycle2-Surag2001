@@ -8,7 +8,7 @@ public class ArraySearch {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] array = new int[1]; 
 
-        System.out.println("Enter integers (Enter a non-integer to escape...)");
+        System.out.println("Enter integers in the array (Enter a non-integer to escape...)");
         do {
             try {
                 array[array.length - 1] = Integer.parseInt(br.readLine());
