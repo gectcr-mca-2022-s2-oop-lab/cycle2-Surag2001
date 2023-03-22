@@ -7,10 +7,12 @@ public class SortStrings {
         System.out.println("Enter the number of strings");
         int no = sc.nextInt();
         String[] array = new String[no];
-        array[0] = sc.nextLine();           //necessary to remove considering the first 'enter' as a string after getting the no. of strings
+        array[0] = sc.nextLine();
+        //the above line is necessary to remove considering the first 'enter' as a string after getting the no. of strings
+        //this is not a problem if BufferedReader is used
 
         System.out.println("Enter " + no + " strings:");
-        for(int i = 0; i < no; i++) 
+        for(int i = 0; i < no; i++)
             array[i] = sc.nextLine();
         
         Arrays.sort(array);
