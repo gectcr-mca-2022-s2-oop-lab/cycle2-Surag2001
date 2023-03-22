@@ -30,6 +30,7 @@ public class Employee {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter the total number of employees: ");
         int n = Integer.parseInt(br.readLine());
+        
         Employee[] employees = new Employee[n];
         for(int i = 0; i < n; i++) {
             System.out.println("Enter no., name and salary of employee " + (i+1));
