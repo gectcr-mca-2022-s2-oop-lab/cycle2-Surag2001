@@ -54,6 +54,7 @@ public class StringMethods {
             default: return "The string without any manipulation is " + string;
         }
 
+        sc.close();
         return s;
     }
     public static void main(String[] args) {
