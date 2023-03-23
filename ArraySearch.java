@@ -14,6 +14,7 @@ public class ArraySearch {
                 array[array.length - 1] = Integer.parseInt(br.readLine());
                 array = Arrays.copyOf(array, array.length + 1);
             } catch (NumberFormatException e) {
+                //use InputMismatchException if Scanner class is used
                 array = Arrays.copyOf(array, array.length - 1);
                 break;
             }
