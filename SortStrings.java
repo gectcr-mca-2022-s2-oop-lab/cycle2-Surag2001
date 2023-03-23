@@ -15,7 +15,17 @@ public class SortStrings {
         for(int i = 0; i < no; i++)
             array[i] = sc.nextLine();
         
-        Arrays.sort(array);
+        for(int i = 0; i < no-1; i++) {
+        	String small = array[i];
+        	
+        	for(int j = i + 1; j < no; j++) {
+        		if(small.compareTo(array[j]) > 0) {
+        			small = array[j];
+        			array[j] = array[i];
+        			array[i] = small;        			
+        		}
+        	}
+        }
         
         System.out.println("\nThe array of strings after sorting is:");
         for(int i = 0; i < no; i++) 
