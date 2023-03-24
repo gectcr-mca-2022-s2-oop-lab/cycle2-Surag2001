@@ -29,7 +29,7 @@ public class StringMethods {
                 break;
             case 5: 
             	System.out.println("Input a string:");
-                str = sc.next();
+                str = sc.nextLine();
                 s = "The concatenated string is \"" + string.concat(str) + "\"";
                 break;
             case 6: 
